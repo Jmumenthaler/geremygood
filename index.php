@@ -5,10 +5,10 @@
         $timeOfDay = 'Morning';
     }else if( 17 > $currentTime && $currentTime > 12){
         $timeOfDay = 'Afternoon';
-    }else if( $currentTime > 17 && $currentTime < 22 ){
+    }else if( $currentTime > 17 && $currentTime < 24 || $currentTime >0 && $currentTime < 5 ){
         $timeOfDay = 'Evening';
     }else{
-        $timeOfDay = 'Night';
+        $timeOfDay = 'Day';
     };
 ?>
 <body class="<?php // print($pageName); ?>">
