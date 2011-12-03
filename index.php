@@ -122,7 +122,6 @@
     <section id="shop">
         <h1>Shop</h1>
         <ul class="links">
-            <li><a href="">Box o' Zombies</a></li>
             <li><a href="">Glittermouse</a></li>
         </ul>
         <div class="articles">
