@@ -1,0 +1,66 @@
+<!Doctype html>
+<head>
+  <title>Some Canvas Experiments</title>
+
+  <style>
+    body{background: #f9f9fa;}
+    canvas{border: solid 1px white;}
+  </style>
+  </head>
+  <body onload="start();">
+  <canvas id="canvas" width="1000" height="1000">
+  Hi,</br>
+  You must not have canvas. Don't worry, just open this up in Safari or Chrome.
+  </canvas>
+</body>
+
+  <script type="text/javascript">
+    //Start function
+    function start(){
+      textToRender = prompt('What letters would you like to use?','NEW');
+      draw();
+      c(textToRender);
+    }
+    //Draw function
+
+    function draw(){
+      var ctx = canvas.getContext('2d');
+          
+      //get width of canvas
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var typesize = canvas.width / 50 ;
+
+      //var len = ctx.measureText(textToRender);
+      //c(len);
+
+      ctx.font = typesize+"em Helvetica";
+      ctx.textAlign = "center";
+      ctx.strokeText(textToRender, x, y);
+      ctx.fillStyle="rgb(255,255,255)";
+
+      //Find width of mark
+      var metrics = ctx.measureText(textToRender);
+      var width = metrics.width;
+        ctx.font = "20pt Calibri";
+        ctx.textAlign = "center";
+        ctx.fillStyle = "#555";
+        ctx.fillText("(" + width + "px wide)", x, y + 40);
+
+    //      ctx.fillStyle = "rgb(200,0,0)";  
+    //      ctx.fillRect (10, 10, 55, 50);  
+
+    //      ctx.fillStyle = "rgba(0, 0, 200, 0.5)";  
+    //      ctx.fillRect (30, 30, 55, 50);  
+
+    }
+    var cI = 1;
+    function c(s){
+      console.log('Var #'+cI+' = '+s);
+      cI++;
+        }
+
+    </script>
+
+
+</html>

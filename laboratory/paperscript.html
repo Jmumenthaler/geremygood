@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="paper.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" canvas="myCanvas">
+  var textToRender = prompt('What text would you like to use?','NEW');
+    mousePos = event.point;
+
+  var text = new PointText(new Point(100,100));
+  text.characterStyle = {
+      fontSize: mousePos,
+      strokeColor: 'rgb(0,0,0)',
+      fillColor: 'white',
+    };
+  text.content = textToRender;
+
+
+function onMouseDown(event) {
+    
+    // Add the mouse down position:
+    start = (event.point);
+    console.log(start.x);
+}
+
+function onMouseUp(event) {
+    // Add the mouse up position:
+    end = event.point;
+    var textr = new PointText(new Point(start.x,end.y));
+    textr.characterStyle = {
+      fontSize: start.y/2,
+      fillcolor: 'white',
+    }
+    textr.strokeColor = new RgbColor(1, 0, 0);
+    textr.content = textToRender;
+    console.log(end.y);   
+  }
+
+// Create a circle shaped path with its center at {x: 80, y: 50}
+// and a radius of 30.
+var circlePath = new Path.Circle(new Point(80, 50), 30);
+circlePath.fillColor = 'red';
+
+// Fit the circlePath to the bounding rectangle of
+// the rectangular path:
+circlePath.fitBounds(text.bounds);
+
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

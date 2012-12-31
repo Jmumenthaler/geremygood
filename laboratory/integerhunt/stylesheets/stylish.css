@@ -1,0 +1,200 @@
+body{
+  background-color: #a1cbd5;
+} 
+h1,
+h2{
+  margin: 100px auto;
+  font-family: "Letter Gothic Std";
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  font-size: 100pt;
+  line-height: 100pt;
+  letter-spacing: 5px;
+  color: #7999a0;
+
+   -webkit-text-stroke-width: 5px;
+   -webkit-text-stroke-color: #CBDFE5;
+
+  text-shadow:
+    /* Depth */
+     1px 1px 0 #241f20,
+     2px 2px 0 #241f20,
+     3px 3px 0 #241f20,
+     4px 4px 0 #241f20,
+     5px 5px 0 #241f20,
+     6px 6px 0 #241f20,
+     7px 7px 0 #241f20,
+     8px 8px 0 #241f20,
+     9px 9px 0 #241f20,
+     10px 10px 0 #241f20,
+     11px 11px 0 #241f20,
+     12px 12px 0 #241f20,
+     13px 13px 0 #241f20,
+     14px 14px 0 #241f20,
+     15px 15px 0 #241f20,
+     16px 16px 0 #241f20,
+     17px 17px 0 #241f20,
+     18px 18px 0 #241f20,
+     19px 19px 0 #241f20,
+     20px 20px 0 #241f20,
+    /* Shaddow */
+     21px 21px 0 #8eb2ba,
+     22px 22px 0 #8eb2ba,
+     22px 23px 0 #8eb2ba,
+     22px 24px 0 #8eb2ba,
+     23px 25px 0 #8eb2ba,
+     23px 26px 0 #8eb2ba,
+     23px 27px 0 #8eb2ba,
+     24px 28px 0 #8eb2ba,
+     24px 29px 0 #8eb2ba,     
+     24px 30px 0 #8eb2ba,
+     25px 31px 0 #8eb2ba,
+     25px 32px 0 #8eb2ba,
+     25px 33px 0 #8eb2ba,
+     26px 34px 0 #8eb2ba,
+     26px 35px 0 #8eb2ba,
+     26px 36px 0 #8eb2ba,
+     27px 37px 0 #8eb2ba,
+     27px 38px 0 #8eb2ba,
+     27px 39px 0 #8eb2ba,     
+     28px 40px 0 #8eb2ba,
+     28px 41px 0 #8eb2ba,
+     28px 42px 0 #8eb2ba,
+     29px 43px 0 #8eb2ba,
+     29px 44px 0 #8eb2ba,
+     29px 45px 0 #8eb2ba,
+     30px 46px 0 #8eb2ba,
+     30px 47px 0 #8eb2ba,
+     30px 48px 0 #8eb2ba,
+     31px 49px 0 #8eb2ba,     
+     31px 50px 0 #8eb2ba,
+     31px 51px 0 #8eb2ba,
+     32px 52px 0 #8eb2ba,
+     32px 53px 0 #8eb2ba,
+     32px 54px 0 #8eb2ba,
+     33px 55px 0 #8eb2ba,
+     33px 56px 0 #8eb2ba,
+     33px 57px 0 #8eb2ba,
+     33px 58px 0 #8eb2ba,
+     34px 59px 0 #8eb2ba,     
+     34px 60px 0 #8eb2ba,
+     34px 61px 0 #8eb2ba,
+     35px 62px 0 #8eb2ba,
+     35px 63px 0 #8eb2ba,
+     35px 64px 0 #8eb2ba,
+     36px 65px 0 #8eb2ba,
+     36px 66px 0 #8eb2ba,
+     36px 67px 0 #8eb2ba,
+     37px 68px 0 #8eb2ba,
+     37px 69px 0 #8eb2ba,     
+     37px 70px 0 #8eb2ba
+     ;
+}
+h2{
+  font-size: 3.8rem;
+  -webkit-text-stroke-width: 2px;
+}
+#start-counting{
+  border-top: solid 1px #94bcc5;
+  padding-top: 50px;
+}
+ul>li{
+  text-align: center;
+  position: relative;
+}
+ul>li>a{
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+ul>li img{
+  margin-left: -25px;
+  position: relative;
+  display: block;
+}
+
+ul>li .five{
+  display: block;
+  position: absolute;
+  z-index: 3;
+  right: -50px;
+  top: 50%;
+  margin-top: -6px;
+  text-align: right;
+  width: 50px;
+  color: rgba(100,100,100,.25);
+}
+
+/*The Bar*/
+
+#bar{
+  background-color: #58595b;
+  height: 50%;
+  width: 100%;
+  position: fixed; 
+  padding-bottom: 50px;
+  top:0%;
+  z-index: 99;
+  color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  -webkit-transition: top .5s ease;
+  font-family: 'Letter Gothic Std';
+}
+#bar #about{
+  height: 100%;
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #000;
+}
+#bar.tellMe{
+  top: 0px;
+}
+#bar.tellMe #aboutNav{
+  position: absolute;
+  padding-bottom: 50%;
+  width: 100%;
+}
+#bar a{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+#bar input{
+  background-color: #6d6e71;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+#bar-middle{
+  margin: 0px auto;
+  float: none;
+  display: block;
+}
+#bar-right{
+  float: right;
+}
+#bar-right iframe{
+  float: right;
+}
+
+/* Lightbox */
+
+#lightbox{
+  position: fixed;
+  z-index: 999;
+  margin: auto;
+  top: 70px;
+  left: 50%;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <title>Phone Numbers</title>
+  <meta name="description" content="">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  
+  <link href="style.css" rel="stylesheet" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+
+</head>
+<body>
+
+  <section id="why">
+  <h1>Phone numbers on the web.</h1>
+  <p>Phone number's on the web are </p>
+  <em>5555555555</em>
+  <p>
+      Test it.   <a href="tel:555-555-5555" onclick="webPhoneNumber('555-555-5555');return false;">555-555-5555</a>
+ 
+  </p>
+  </section>
+        <style>
+          #the-phone-number{position: absolute; top: 0px;left: 0px; width: 100%;height: 100%;background-color: rgba(0,0,0,.89);color: white;z-index: 999;text-align:center;}
+          #the-phone-number span{position: absolute;display:block;font-size: 72px;margin: auto;top: 40%;width: 100%;}
+        </style>
+        <script>
+          var webPhoneNumber = function(e){   
+            var a = document.createElement('a');
+            a.setAttribute('id','the-phone-number');
+            a.setAttribute('onclick','closePhoneNumber()');
+            a.innerHTML = '<span class="number">'+e+'</span>'
+            document.body.appendChild(a);
+           }
+           var closePhoneNumber = function(e){
+              var elem = document.getElementById('the-phone-number');
+              elem.parentNode.removeChild(elem);
+              return false;
+           }
+        </script>
+<section id="tool">
+<div class="flip-container" >
+  <div class="flipper">
+    <div class="front">
+
+      <form>
+        <input id="phone-number" type="tel" placeholder="•••-•••-••••" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"/>
+        <label for="phone-number">Enter your phone number</label>
+        <input id="submit" type="submit" value="Make me one">
+      </form>
+
+    </div>
+    <div id="result" class="back">
+      <textarea readonly="readonly">
+
+       <style>
+          #the-phone-number{position: absolute; top: 0px;left: 0px; width: 100%;height: 100%;background-color: rgba(0,0,0,.89);color: white;z-index: 999;text-align:center;}
+          #the-phone-number span{position: absolute;display:block;font-size: 72px;margin: auto;top: 40%;width: 100%;}
+        </style>
+        <script>
+          var webPhoneNumber = function(e){   
+            var a = document.createElement('a');
+            a.setAttribute('id','the-phone-number');
+            a.setAttribute('onclick','closePhoneNumber()');
+            a.innerHTML = '<span class="number">'+e+'</span>'
+            document.body.appendChild(a);
+           }
+           var closePhoneNumber = function(e){
+              var elem = document.getElementById('the-phone-number');
+              elem.parentNode.removeChild(elem);
+              return false;
+           }
+        </script>
+      </textarea>
+
+    </div>
+  </div>
+</div>
+ 
+  </section>
+  <section id="share">
+
+  </section>
+</body>
+
