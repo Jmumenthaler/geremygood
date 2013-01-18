@@ -50,6 +50,7 @@ $count = count($files);
 
 	<!-- Delete everything in this .container and get started on your own site! -->
   <div id="bar" class="container">
+<!--
       <div id="about" class="fifteen columns">
         <p>It all started with numbers.</p>
       <h3>Rules</h3>
@@ -62,7 +63,7 @@ $count = count($files);
         
       </div>
 
-
+-->
       <div class="one-third column">
         <a id="aboutNav" href="#about">About</a>
         <a href="github">GITHUB</a>

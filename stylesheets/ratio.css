@@ -1,0 +1,122 @@
+/* A simple ratio grid */
+
+/*
+ * Future ideas TODO
+ * - Asign colors to each section. Have background fade between colors when reach new point.
+ * - Make fully responsive
+ * - Show grid on hidden keycode
+ * - Hover on super and sub highlights.
+ * */
+
+
+/* The styles
+================================================== */
+    html        { border-left: 10px solid #a1a1a1; }
+    body        { position: relative; width: 1000px; margin: 0 auto; padding: 0 0 200px 0;}
+    section     { position: relative; width: 618px; padding: 248px 0 248px 382px; }
+    section p   { padding: 6px ; margin-right: 34px; }
+    aside       { width: 200px; position: absolute; right: -200px; top: 328px; font-size: 10px; color: #a3a3a3; }
+    aside dd a  { color: #999; }
+    nav         { position: fixed; top: 248px; z-index: 10;}
+    nav h1      { margin-bottom: 14px; margin-left: -5px; }
+    ol          { margin: 0; padding: 0; }
+    ol li       { margin: 6px 0; padding: 0; list-style: none; }
+    ol li a     { text-decoration: none; padding: 3px 0px; margin: 3px 0px; }
+    
+    #opening p:last-of-type:after { content: ' '; width: 8px; height: 8px; background: black; display: inline-block; border-radius: 50%; margin-left: 8px; }
+    #opening aside { top: 250px; }
+    #research>dl { display: inline-block; margin-right: 24px; width: 275px; margin-top: 0; padding-top: 0; vertical-align: top; }
+    #research>dl>dt { font-size: 10px; margin: 0; padding: 0; }
+    #research figure { margin-top: 48px; }
+    #research figcaption { display: inline-block; width: 200px; vertical-align: top; }
+    figcaption h5 { margin-top: 0px;}
+    figcaption h4 { margin-bottom: 0px; }
+    figure img      { border: solid 6px #aaa; display: inline-block; margin-right: 6px; }
+    figcaption a    { font-size: 12px; font-style: italic; text-decoration: underline; display: block; }
+
+    section ul    { position: relative; display: inline-block; vertical-align: top; padding: 24px 24px 0 0; }
+    section ul h3 { font-size: 10px; font-style: italic; letter-spacing: 1px;}
+    section li    { font-size: 14px; margin: 6px 0 0 0; }
+
+    #friends     { margin-bottom: 0px; padding-bottom: 24px;}
+    #friends ul li{ width: 30%; display: inline-block;}
+    #organizations { padding-top: 0; margin: 0px; }
+    #organizations ul li{ width: 45%; display: inline-block;}
+
+
+    #gimmie { margin-top: 24px; display: block; margin-top: 48px; }
+    #gimmie .item { height: 30px; width: 50%; overflow: hidden; background-position: center center; background-size: cover; background-repeat: no-repeat; float: left; }
+    #gimmie img { margin: 3px; }
+    #gimmie img::after { content: ''; display: block; float: none; clear: both;}
+
+    ol li:nth-of-type(1) a:hover { background-color: #0eeaff; color: #0eeaff; }
+    ol li:nth-of-type(2) a:hover { background-color: #15a9fa; color: #15a9fa; }
+    ol li:nth-of-type(3) a:hover { background-color: #1b76ff; color: #1b76ff; }
+    ol li:nth-of-type(4) a:hover { background-color: #1c3ffd; color: #1c3ffd; }
+    ol li:nth-of-type(5) a:hover { background-color: #2c1dff; color: #2c1dff; }
+    ol li:nth-of-type(6) a:hover { background-color: #0003c7; color: #0003c7; }
+    ol li:nth-of-type(7) a:hover { background-color: #0e1e8c; color: #0e1e8c; }
+    ol li:nth-of-type(8) a:hover { background-color: #010340; color: #010340; }
+
+    section:nth-of-type(1) ::selection,    section:nth-of-type(1) ::-moz-selection { background-color: #0eeaff; color: #0eeaff;color: white; }
+    section:nth-of-type(2) ::selection,    section:nth-of-type(2) ::-moz-selection { background-color: #15a9fa; color: #15a9fa;color: white; }
+    section:nth-of-type(3) ::selection,    section:nth-of-type(3) ::-moz-selection { background-color: #1b76ff; color: #1b76ff;color: white; }
+    section:nth-of-type(4) ::selection,    section:nth-of-type(4) ::-moz-selection { background-color: #1c3ffd; color: #1c3ffd;color: white; }
+    section:nth-of-type(5) ::selection,    section:nth-of-type(5) ::-moz-selection { background-color: #2c1dff; color: #2c1dff;color: white; }
+    section:nth-of-type(6) ::selection,    section:nth-of-type(6) ::-moz-selection { background-color: #0003c7; color: #0003c7;color: white; }
+    section:nth-of-type(7) ::selection,    section:nth-of-type(7) ::-moz-selection { background-color: #0e1e8c; color: #0e1e8c;color: white; }
+    section:nth-of-type(8) ::selection,    section:nth-of-type(8) ::-moz-selection { background-color: #010340; color: #010340; color: white; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 1400px) {
+    
+    aside          { position: relative; top: 0px; right: inherit;}
+    #opening aside { top: 0px; }
+
+    }
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    body           { width: 100%; }
+    nav            { position: relative; top: inherit; width: 628px; margin: 0px auto; }
+    section        { margin: 200px auto; padding: 0px; }
+    #opening       { margin-top: 200px; }
+    }
+
+    
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+
+    body           { width: 100%; }
+    nav            { position: relative; top: 120px; width: 100%; margin: 0px auto; padding: 0px 10%; }
+    section        { width: 80%; margin: 200px auto; padding: 10%; }
+    #opening       { margin-top: 200px; }
+    aside          { position: relative; top: 0px; right: inherit;}
+    
+    #opening aside { top: 0px; }
+    #research dl   { margin-bottom: 24px; }
+    }
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    }

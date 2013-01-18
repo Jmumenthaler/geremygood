@@ -1,78 +1,442 @@
-/*
-* Skeleton V1.1
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 8/17/2011
-*/
+html {
+  border-left: solid 18px #ccebff;
+  font-family: "Helvetica", sans-serif;
+  -webkit-transition: border-color 0.5s ease; }
 
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
+body {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 200px 0; }
 
-/* #Site Styles
-================================================== */
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: background-color 0s; }
+  a:hover {
+    color: transparent !important; }
 
-/* #Page Styles
-================================================== */
+h1 {
+  font-size: 48px;
+  line-height: 40px;
+  margin: 0 0 14px 0;
+  display: inline-block; }
 
-/* #Media Queries
-================================================== */
+h2 {
+  font-size: 48px;
+  line-height: 40px;
+  margin: 0 0 42px 0; }
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-  
-    :root{ font-size: 50%; } 
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 8px 0; }
 
-  }
+h4 {
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0 0 4px 0; }
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-    :root{ font-size: 40%; }  
+h5 {
+  font-size: 10px;
+  line-height: 10px;
+  font-style: italic;
+  font-weight: normal; }
 
-  }
+h6 {
+  font-size: 12px;
+  line-height: 21px;
+  font-style: italic;
+  font-weight: normal; }
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-  
-    :root{ font-size: 35%; }
+blockquote {
+  margin: 0 50px 0 4px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+  text-indent: -4px; }
 
-  }
+dl, dd, dt {
+  margin: 0;
+  padding: 0;
+  line-height: 18px; }
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+dt {
+  margin: 12px 0 6px 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: capitalize; }
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-  
-    :root{ font-size: 45%; }
-    html body #opening p{ line-height: 30px; font-size: 18px;}
-    html body sub{font-size: 18px; display: block; margin-bottom: 12px;}
-    section h1{font-size: 7.8rem !important;}
-    ul li{font-size: 14px; line-height: 24px;}
-    html body footer h4{font-size: 28px;}
-  }
+dd {
+  font-size: 12px;
+  font-style: normal; }
+  dd sub {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+    padding: 0; }
+  dd a {
+    text-decoration: none; }
 
+sup {
+  position: relative;
+  font-size: 50%;
+  padding: 0 0 0 1px;
+  color: red;
+  bottom: 1em; }
 
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
+section {
+  position: relative;
+  width: 618px;
+  padding: 248px 0 248px 382px; }
+  section p {
+    padding: 6px;
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 24px; }
+  section ul {
+    position: relative;
+    display: inline-block;
+    padding: 24px 24px 0 0;
+    vertical-align: top; }
+    section ul h3 {
+      font-size: 10px;
+      font-style: italic;
+      letter-spacing: 1px; }
+  section li {
+    margin: 6px 0 0 0;
+    font-size: 14px; }
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+aside {
+  position: absolute;
+  width: 200px;
+  right: -200px;
+  top: 328px;
+  font-size: 10px;
+  color: #333333; }
+  aside dd a {
+    color: #333333; }
+
+nav {
+  position: fixed;
+  top: 248px;
+  z-index: 10; }
+  nav h1 {
+    margin: 0 0 14px -5px; }
+
+ul {
+  list-style: none; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+  ol li {
+    margin: 6px 0;
+    padding: 0;
+    list-style: none; }
+    ol li a {
+      text-decoration: none;
+      padding: 3px 0;
+      margin: 3px 0; }
+
+#opening aside {
+  top: 350px; }
+
+#research figure {
+  margin-top: 48px; }
+  #research figure img {
+    display: inline-block;
+    margin-right: 24px;
+    border: solid 9px #dedede; }
+#research figcaption {
+  display: inline-block;
+  width: 200px;
+  vertical-align: bottom; }
+  #research figcaption h4 {
+    margin-bottom: 0; }
+  #research figcaption h5 {
+    margin: 0 inherit 24px; }
+  #research figcaption a {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 50px; }
+
+#gimmie {
+  display: block;
+  min-height: 250px;
+  margin-top: 48px;
+  position: relative; }
+  #gimmie .assets {
+    border: 9px solid #dedede;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box; }
+    #gimmie .assets::after {
+      display: block;
+      content: ".";
+      color: transparent;
+      float: none;
+      clear: both; }
+  #gimmie:hover .item {
+    width: 10.05%;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #gimmie .item {
+    height: 200px;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    opacity: 0.333 !important;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top;
+    color: transparent; }
+    #gimmie .item a {
+      display: block;
+      color: transparent;
+      width: 100%;
+      height: 100%; }
+    #gimmie .item.active {
+      visibility: visible; }
+  #gimmie img {
+    margin: 3px; }
+    #gimmie img::after {
+      content: "";
+      float: none;
+      clear: both; }
+
+#thequota ul {
+  list-style: none; }
+#thequota li {
+  display: inline-block;
+  width: 120px;
+  padding: 0px 18px 18px 0;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic; }
+  #thequota li a {
+    display: block; }
+  #thequota li em {
+    font-size: 48px;
+    display: block;
+    font-weight: bold;
+    font-style: normal; }
+
+#connect .gravitar {
+  position: relative;
+  top: 24px;
+  display: inline-block; }
+  #connect .gravitar:hover {
+    outline: solid 10px; }
+
+#friends {
+  padding-top: 0;
+  padding-bottom: 0; }
+  #friends ul li {
+    display: inline-block;
+    width: 30%; }
+    #friends ul li a {
+      padding: 4px 0; }
+
+#organizations {
+  padding-top: 48px;
+  padding-bottom: 0; }
+  #organizations ul li {
+    display: inline-block;
+    width: 45%; }
+
+ol li:nth-of-type(1) a:hover, ol li:nth-of-type(1).active a {
+  background-color: #ccebff;
+  color: #ccebff;
+  color: transparent; }
+  ol li:nth-of-type(1) a:hover h1, ol li:nth-of-type(1).active a h1 {
+    background-color: #ccebff; }
+ol li:nth-of-type(2) a:hover, ol li:nth-of-type(2).active a {
+  background-color: #99d6ff;
+  color: #99d6ff;
+  color: transparent; }
+ol li:nth-of-type(3) a:hover, ol li:nth-of-type(3).active a {
+  background-color: #66c2ff;
+  color: #66c2ff;
+  color: transparent; }
+ol li:nth-of-type(4) a:hover, ol li:nth-of-type(4).active a {
+  background-color: #33adff;
+  color: #33adff;
+  color: transparent; }
+ol li:nth-of-type(5) a:hover, ol li:nth-of-type(5).active a {
+  background-color: #0099ff;
+  color: #0099ff;
+  color: transparent; }
+ol li:nth-of-type(6) a:hover, ol li:nth-of-type(6).active a {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+ol li:nth-of-type(7) a:hover, ol li:nth-of-type(7).active a {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+ol li:nth-of-type(8) a:hover, ol li:nth-of-type(8).active a {
+  background-color: #005c99;
+  color: #005c99;
+  color: transparent; }
+ol li:nth-of-type(9) a:hover, ol li:nth-of-type(9).active a {
+  background-color: #003d66;
+  color: #003d66;
+  color: transparent; }
+ol li:nth-of-type(10) a:hover, ol li:nth-of-type(10).active a {
+  background-color: #001f33;
+  color: #001f33;
+  color: transparent; }
+
+section:nth-of-type(1) ::selection, section:nth-of-type(1) ::-moz-selection, section:nth-of-type(1) a:hover {
+  background-color: #ccebff;
+  color: #ccebff;
+  color: transparent; }
+
+section:nth-of-type(2) ::selection, section:nth-of-type(2) ::-moz-selection, section:nth-of-type(2) a:hover {
+  background-color: #99d6ff;
+  color: #99d6ff;
+  color: transparent; }
+
+section:nth-of-type(3) ::selection, section:nth-of-type(3) ::-moz-selection, section:nth-of-type(3) a:hover {
+  background-color: #66c2ff;
+  color: #66c2ff;
+  color: transparent; }
+
+section:nth-of-type(4) ::selection, section:nth-of-type(4) ::-moz-selection, section:nth-of-type(4) a:hover {
+  background-color: #33adff;
+  color: #33adff;
+  color: transparent; }
+
+section:nth-of-type(5) ::selection, section:nth-of-type(5) ::-moz-selection, section:nth-of-type(5) a:hover {
+  background-color: #0099ff;
+  color: #0099ff;
+  color: transparent; }
+
+section:nth-of-type(6) ::selection, section:nth-of-type(6) ::-moz-selection, section:nth-of-type(6) a:hover {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+
+section:nth-of-type(7) ::selection, section:nth-of-type(7) ::-moz-selection, section:nth-of-type(7) a:hover {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+
+section:nth-of-type(8) ::selection, section:nth-of-type(8) ::-moz-selection, section:nth-of-type(8) a:hover {
+  background-color: #005c99;
+  color: #005c99;
+  color: transparent; }
+
+section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, section:nth-of-type(9) a:hover {
+  background-color: #003d66;
+  color: #003d66;
+  color: transparent; }
+
+@media all and (min-width: 768px) and (max-width: 1400px) {
+  aside {
+    position: relative;
+    top: 0px;
+    right: inherit; }
+
+  #opening aside {
+    top: 0px; } }
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  body {
+    width: 100%; }
+
+  nav-position: relative;
+  nav-top: inherit;
+  nav-width: 628px;
+  nav-margin: 0px auto;
+  section {
+    margin: 200px auto;
+    padding: 0px; }
+
+  #opening {
+    margin-top: 200px; } }
+@media only screen and (max-device-width: 480px) {
+  body {
+    width: 100%; }
+
+  nav {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 10%; }
+
+  section {
+    width: 80%;
+    margin: 200px auto;
+    padding: 10%; }
+
+  #opening {
+    margin-top: 200px; }
+    #opening p {
+      font-size: 18px;
+      line-height: 24px; }
+    #opening aside {
+      top: 0px; }
+
+  aside {
+    position: relative;
+    top: 0px;
+    right: inherit; }
+    aside a {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 4px inherit; }
+
+  #research dl {
+    margin-top: 24px; }
+
+  #connect ul li {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    padding: 4px; }
+
+  #friends, #organizations {
+    margin: 20px inherit;
+    padding: 20px inherit; }
+    #friends ul li, #organizations ul li {
+      width: 100%;
+      font-size: 18px;
+      display: block;
+      padding: 4px inherit; } }
+@media print {
+  html {
+    border: none; }
+
+  a[href*="http://"]:link:after {
+    content: " (" attr(href) ") ";
+    display: block;
+    font-size: 10px;
+    font-family: mono; }
+
+  nav {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 100px; }
+
+  section {
+    padding: 100px; } }

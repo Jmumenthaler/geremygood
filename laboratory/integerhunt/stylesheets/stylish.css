@@ -135,7 +135,7 @@ ul>li .five{
   width: 100%;
   position: fixed; 
   padding-bottom: 50px;
-  top:0%;
+  top: 0;
   z-index: 99;
   color: white;
   box-shadow: 0 0 5px rgba(0,0,0,.5);
@@ -148,14 +148,16 @@ ul>li .five{
   position: relative;
   width: 100%;
   background: #000;
+  visibility: hidden;
 }
 #bar.tellMe{
-  top: 0px;
+  top: -100px;
 }
 #bar.tellMe #aboutNav{
   position: absolute;
   padding-bottom: 50%;
   width: 100%;
+  
 }
 #bar a{
   color: white;

@@ -1,0 +1,16 @@
+/* TEAM */
+
+Creator: Geremy Good @geremygood
+
+
+/* Thanks */
+
+Everyone at Simple.Honest.Work.
+Hiro @mnmly
+Skeleton
+
+
+/* SITE */
+
+Standards: HTML, CSS3
+Components: jQuery
