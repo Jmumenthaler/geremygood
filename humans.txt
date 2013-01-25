@@ -2,13 +2,17 @@
 
 Creator: Geremy Good @geremygood
 
-
 /* Thanks */
 
+Nicole
 Everyone at Simple.Honest.Work.
-Hiro @mnmly
+Hiro – @mnmly
+
 Skeleton
 Gimmie Bar
+SASS
+Coffeescript
+Live Reload
 
 /* SITE */
 

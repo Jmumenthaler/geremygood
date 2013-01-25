@@ -25,7 +25,7 @@ Coffee file for Geremy Good
     $(window).scroll(function() {
       var pixels;
       pixels = $(window).scrollTop();
-      return $('section').each(function() {
+      return $('section, article').each(function() {
         var $this, color, current, height, offset;
         $this = $(this);
         offset = $this.offset();
@@ -47,11 +47,11 @@ Coffee file for Geremy Good
     return $(document).bind('keydown', function(e) {
       var current;
       if (e.keyCode === 38) {
-        current = $('section.active').index();
+        current = $('section.active, article.active').index();
         current = parseInt(current);
         return $('nav ol li:nth-of-type(' + (current - 1) + ') a').click();
       } else if (e.keyCode === 40) {
-        current = $('section.active').index();
+        current = $('section.active, article.active').index();
         current = parseInt(current);
         return $('nav ol li:nth-of-type(' + (current + 1) + ') a').click();
       }

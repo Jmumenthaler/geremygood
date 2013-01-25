@@ -10,7 +10,7 @@
 
     <link rel="author" href="humans.txt" />
 
-    <title>Geremy Good</title>
+    <title>Geremy Good | Books of 2013</title>
 
   	<link rel="stylesheet" href="/stylesheets/normalize.css">
   	<link rel="stylesheet" href="/stylesheets/layout.css">
@@ -23,18 +23,18 @@
 <body class="container" >
 
 <nav>
+  <h1>2013</h1>
   <ol>
-    <li><h1><a href="#2013">2013</a></h1></li>
+   <!-- <li><a href="#design-patterns">Design Patterns</a></li>-->
     <li><a href="#outliers">Outliers</a></li>
   </ol>
   <a href="/">home</a>
 </nav>
 
-<section id="2013">
 <?php 
+//include('design-patterns.php');
 include('outliers.php');
 ?>
-</section>
 
 </body>
 

@@ -86,25 +86,25 @@ sup {
   color: red;
   bottom: 1em; }
 
-section {
+section, article {
   position: relative;
   width: 618px;
   padding: 248px 0 248px 382px; }
-  section p {
+  section p, article p {
     padding: 6px;
     margin-right: 50px;
     font-size: 18px;
     line-height: 24px; }
-  section ul {
+  section ul, article ul {
     position: relative;
     display: inline-block;
     padding: 24px 24px 0 0;
     vertical-align: top; }
-    section ul h3 {
+    section ul h3, article ul h3 {
       font-size: 10px;
       font-style: italic;
       letter-spacing: 1px; }
-  section li {
+  section li, article li {
     margin: 6px 0 0 0;
     font-size: 14px; }
 
@@ -126,14 +126,16 @@ nav {
   nav h1 {
     margin: 0 0 14px -5px; }
 
+article h2 {
+  margin-bottom: 12px; }
 article .drop {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1em;
   background: black;
-  color: white;
+  color: white !important;
   width: 1em;
   height: 1em;
-  margin: 0 3px 3px 0;
+  margin: 0 6px 3px 0;
   float: left;
   text-align: center; }
 
@@ -187,7 +189,7 @@ ol {
 
 #gimmie {
   display: block;
-  min-height: 250px;
+  min-height: 100px;
   margin-top: 48px;
   position: relative; }
   #gimmie .assets {
@@ -214,6 +216,8 @@ ol {
     border: none;
     margin: 0;
     padding: 0; }
+    #gimmie:hover .item:hover {
+      opacity: 1; }
   #gimmie .item {
     height: 200px;
     border: none;
@@ -222,7 +226,7 @@ ol {
     padding: 0;
     position: absolute;
     right: 0px;
-    opacity: 0.333 !important;
+    opacity: 0.333;
     overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
@@ -374,6 +378,51 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
   color: #003d66;
   color: transparent; }
 
+article:nth-of-type(1) ::selection, article:nth-of-type(1) ::-moz-selection, article:nth-of-type(1) a:hover, article:nth-of-type(1) .drop {
+  background-color: #ccebff;
+  color: #ccebff;
+  color: transparent; }
+
+article:nth-of-type(2) ::selection, article:nth-of-type(2) ::-moz-selection, article:nth-of-type(2) a:hover, article:nth-of-type(2) .drop {
+  background-color: #99d6ff;
+  color: #99d6ff;
+  color: transparent; }
+
+article:nth-of-type(3) ::selection, article:nth-of-type(3) ::-moz-selection, article:nth-of-type(3) a:hover, article:nth-of-type(3) .drop {
+  background-color: #66c2ff;
+  color: #66c2ff;
+  color: transparent; }
+
+article:nth-of-type(4) ::selection, article:nth-of-type(4) ::-moz-selection, article:nth-of-type(4) a:hover, article:nth-of-type(4) .drop {
+  background-color: #33adff;
+  color: #33adff;
+  color: transparent; }
+
+article:nth-of-type(5) ::selection, article:nth-of-type(5) ::-moz-selection, article:nth-of-type(5) a:hover, article:nth-of-type(5) .drop {
+  background-color: #0099ff;
+  color: #0099ff;
+  color: transparent; }
+
+article:nth-of-type(6) ::selection, article:nth-of-type(6) ::-moz-selection, article:nth-of-type(6) a:hover, article:nth-of-type(6) .drop {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+
+article:nth-of-type(7) ::selection, article:nth-of-type(7) ::-moz-selection, article:nth-of-type(7) a:hover, article:nth-of-type(7) .drop {
+  background-color: #007acc;
+  color: #007acc;
+  color: transparent; }
+
+article:nth-of-type(8) ::selection, article:nth-of-type(8) ::-moz-selection, article:nth-of-type(8) a:hover, article:nth-of-type(8) .drop {
+  background-color: #005c99;
+  color: #005c99;
+  color: transparent; }
+
+article:nth-of-type(9) ::selection, article:nth-of-type(9) ::-moz-selection, article:nth-of-type(9) a:hover, article:nth-of-type(9) .drop {
+  background-color: #003d66;
+  color: #003d66;
+  color: transparent; }
+
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
   aside {
     position: relative;
@@ -394,7 +443,7 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
     nav li:not(:first-child) {
       display: none; }
 
-  section {
+  section, article {
     margin: 0 auto;
     padding: 200px 0; }
 
@@ -415,7 +464,7 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
     width: 80%;
     padding: 0px 10%; }
 
-  section {
+  section, article {
     width: 100%;
     box-sizing: border-box;
     margin: 200px auto;
@@ -477,5 +526,5 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
     left: 0px;
     padding: 100px; }
 
-  section {
+  section, article {
     padding: 100px; } }

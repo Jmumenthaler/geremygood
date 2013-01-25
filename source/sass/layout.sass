@@ -1,5 +1,6 @@
 // This is a sass file
 @import "colors"
+@import "mixins"
 
 html
   border-left: solid 18px $color1
@@ -82,7 +83,7 @@ sup
   color: red
   bottom: 1em
 
-section
+section, article
   position: relative
   width: 618px
   padding: 248px 0 248px 382px
@@ -122,14 +123,16 @@ nav
   h1
     margin: 0 0 14px -5px
 article
+  h2
+    margin-bottom: 12px
   .drop
-    font-size: 2em
+    font-size: 2.5em
     line-height: 1em
     background: black
-    color: white
+    color: white !important
     width: 1em
     height: 1em
-    margin: 0 3px 3px 0
+    margin: 0 6px 3px 0
     float: left
     text-align: center
 ul
@@ -197,7 +200,7 @@ ol
 
 #gimmie
   display: block
-  min-height: 250px
+  min-height: 100px
   margin-top: 48px
   position: relative
   .assets
@@ -225,6 +228,8 @@ ol
       border: none
       margin: 0
       padding: 0
+      &:hover
+        opacity: 1 
   .item
     height: 200px
     border: none
@@ -233,7 +238,7 @@ ol
     padding: 0
     position: absolute
     right: 0px
-    opacity: .3333 !important
+    opacity: .3333 
     overflow: hidden
     background-position: center center
     background-repeat: no-repeat
@@ -402,7 +407,55 @@ section:nth-of-type(9)
     background-color: $color9
     color: $color9
     color: transparent
-  
+
+
+article:nth-of-type(1) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color1
+    color: $color1
+    color: transparent
+article:nth-of-type(2) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color2
+    color: $color2
+    color: transparent
+article:nth-of-type(3) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color3
+    color: $color3
+    color: transparent
+article:nth-of-type(4) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color4
+    color: $color4
+    color: transparent
+article:nth-of-type(5) 
+  ::selection, ::-moz-selection, a:hover, .drop  
+    background-color: $color5
+    color: $color5
+    color: transparent
+article:nth-of-type(6) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color6
+    color: $color6
+    color: transparent
+article:nth-of-type(7) 
+  ::selection, ::-moz-selection, a:hover, .drop  
+    background-color: $color7
+    color: $color7
+    color: transparent
+article:nth-of-type(8) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color8
+    color: $color8
+    color: transparent
+article:nth-of-type(9) 
+  ::selection, ::-moz-selection, a:hover, .drop
+    background-color: $color9
+    color: $color9
+    color: transparent
+
+
 
 @import "tablet"
 @import "mobile"

@@ -24,7 +24,7 @@ $('document').ready ->
   $(window).scroll ->
     pixels = $(window).scrollTop()
 
-    $('section').each ->
+    $('section, article').each ->
       $this = $(this)
       offset = $this.offset()
       height = $this.outerHeight()
@@ -39,16 +39,16 @@ $('document').ready ->
         $('html').css
           'border-color' : color
       else
-        $this.removeClass 'active' 
+        $this.removeClass 'active'
   
   ## Allow keys to navigate site
   $(document).bind 'keydown', (e) ->
     if e.keyCode is 38
-      current = $('section.active').index()
+      current = $('section.active, article.active').index()
       current = parseInt(current)
       $('nav ol li:nth-of-type('+(current-1)+') a').click()
     else if e.keyCode is 40
-      current = $('section.active').index()
+      current = $('section.active, article.active').index()
       current = parseInt(current)
       $('nav ol li:nth-of-type('+(current+1)+') a').click()
       
