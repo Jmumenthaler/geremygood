@@ -1,17 +1,17 @@
 // Portrait
-@media only screen and (max-device-width: 480px)
+@media only screen and (max-width: 768px)
   body
     width: 100%
   nav
     position: relative
     top: 120px
-    width: 100%
-    margin: 0px auto
+    width: 80%
     padding: 0px 10%
   section
-    width: 80%
+    width: 100%
+    box-sizing: border-box
     margin: 200px auto
-    padding: 10%
+    padding: 10% 0 10% 10%
   #opening
     margin-top: 200px
     p
@@ -28,8 +28,14 @@
       line-height: 24px
       padding: 4px inherit
   #research
+    figcaption
+      width: 190px
     dl
       margin-top: 24px
+    #gimmie
+      width: 90%
+      min-height: 50px
+      margin-bottom: 24px
   #connect
     ul li
       display: block
@@ -37,8 +43,8 @@
       font-size: 24px
       padding: 4px
   #friends, #organizations
-    margin: 20px inherit
-    padding: 20px inherit
+    margin-top: 0
+    margin-bottom: 0
     ul li
       width: 100%
       font-size: 18px

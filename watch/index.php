@@ -10,13 +10,12 @@
 
     <link rel="author" href="humans.txt" />
 
-    <title>Geremy Good</title>
+    <title>Current Time : Geremy Good </title>
 
   	<link rel="stylesheet" href="/stylesheets/normalize.css">
   	<link rel="stylesheet" href="/stylesheets/layout.css">
 
     <script type="text/javascript" src='/scripts/jquery-1.5.min.js'></script>
-    <script type="text/javascript" src='/scripts/gimmie.js'></script>
     <script type="text/javascript" src='/scripts/interaction.js'></script>
 
 </head>
@@ -24,31 +23,19 @@
 <body class="container" >
 
 <nav>
-  <ol>
-    <li><h1><a href="#opening">Geremy <br/>Good</a></h1></li>
-    <li><a href="#philosophy">Philosophy</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#thequota">The Quota</a></li>
-    <li><a href="#laboratory">Laboratory</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#connect">Connect</a></li>
-  </ol>
+<h1>
+<time><?php
+
+  $time = new DateTime('now', new DateTimeZone('UTC'));
+  echo $time->format(' H:i:s'); //F j, Y
+
+?></time>
+</h1>
 </nav>
 
-<?php 
+<section id="clock">
 
-include('__sections/opening.php');
-include('__sections/philosophy.php');
-include('__sections/research.php');
-include('__sections/thequota.php');
-include('__sections/laboratory.php');
-include('__sections/work.php');
-include('__sections/connect.php');
-
-include('__sections/friends.php');
-include('__sections/organizations.php');
-
-?>
+</section>
 
 
 </body>
@@ -72,3 +59,4 @@ include('__sections/organizations.php');
 </script>    
 
 </html>
+

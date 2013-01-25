@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) and (max-width: 1400px)
+@media only screen and (min-width: 768px) and (max-width: 1400px)
   aside
     position: relative
     top: 0px
@@ -7,16 +7,23 @@
     aside
       top: 0px
 
-@media all and (min-width: 768px) and (max-width: 1000px)
+@media only screen and (min-width: 768px) and (max-width: 1000px)
   body
     width: 100%
-  nav: 
+  nav
     position: relative
     top: inherit
     width: 628px
-    margin: 0px auto
+    margin: 100px auto 0
+    li:not(:first-child)
+      display: none
   section
-    margin: 200px auto
-    padding: 0px
+    margin: 0 auto
+    padding: 200px 0
   #opening
-    margin-top: 200px
+    padding-top: 50px
+  #connect
+    li
+      padding-left: 24px
+      a
+        font-size: 18px

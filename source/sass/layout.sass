@@ -1,16 +1,16 @@
 // This is a sass file
-
 @import "colors"
 
 html
   border-left: solid 18px $color1
   font-family: 'Helvetica', sans-serif
   -webkit-transition: border-color .5s ease
+  min-height: 100%
 body
   position: relative
   width: 1000px
   margin: 0 auto
-  padding: 0 0 200px 0
+  padding: 0 0 100px 0
 
 a
   color: $black
@@ -116,11 +116,22 @@ aside
 
 nav
   position: fixed
+  display: block
   top: 248px
   z-index: 10
   h1
     margin: 0 0 14px -5px
-
+article
+  .drop
+    font-size: 2em
+    line-height: 1em
+    background: black
+    color: white
+    width: 1em
+    height: 1em
+    margin: 0 3px 3px 0
+    float: left
+    text-align: center
 ul
   list-style: none
 
@@ -160,6 +171,18 @@ ol
       display: inline-block
       margin-right: 24px
       border: solid 9px #dedede
+      vertical-align: top
+    div
+      display: inline-block
+    a
+      display: inline-block
+      font-size: 12px
+      font-style: italic
+      text-decoration: underline
+      margin-top: 50px
+      vertical-align: bottom
+      &:last-child
+        margin-top: 0 
   figcaption
     display: inline-block
     width: 200px
@@ -167,13 +190,11 @@ ol
     h4
       margin-bottom: 0
     h5
-      margin: 0 inherit 24px
-    a
-      display: inline-block
-      font-size: 12px
-      font-style: italic
-      text-decoration: underline
-      margin-top: 50px
+      margin: 6px inherit 24px inherit
+      display: block
+      line-height: 1.25em
+      padding-bottom: 12px
+
 #gimmie
   display: block
   min-height: 250px
@@ -244,6 +265,7 @@ ol
     text-transform: uppercase
     font-weight: bold
     font-style: italic
+    position: relative
     a
       display: block
     em
@@ -277,6 +299,9 @@ ol
     display: inline-block
     width: 45%
 
+    
+
+/* COLORS */
 
 ol 
   li:nth-of-type(1) 
@@ -377,8 +402,6 @@ section:nth-of-type(9)
     background-color: $color9
     color: $color9
     color: transparent
-
-.active
   
 
 @import "tablet"

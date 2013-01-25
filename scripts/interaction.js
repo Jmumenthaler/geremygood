@@ -11,6 +11,17 @@ Coffee file for Geremy Good
     var navigation, viewportHeight;
     navigation = $('nav');
     viewportHeight = $(window).height();
+    $("#friends ul li").shuffle();
+    $("#organizations ul li").shuffle();
+    $("nav ol a").click(function(e) {
+      var destination, destinationTop;
+      e.preventDefault();
+      destination = $(this).attr("href");
+      destinationTop = $(destination).offset();
+      return $("html, body").animate({
+        scrollTop: destinationTop.top
+      });
+    });
     $(window).scroll(function() {
       var pixels;
       pixels = $(window).scrollTop();
@@ -46,5 +57,26 @@ Coffee file for Geremy Good
       }
     });
   });
+
+  (function($) {
+    return $.fn.shuffle = function() {
+      var allElems, getRandom, shuffled;
+      allElems = this.get();
+      getRandom = function(max) {
+        return Math.floor(Math.random() * max);
+      };
+      shuffled = $.map(allElems, function() {
+        var randEl, random;
+        random = getRandom(allElems.length);
+        randEl = $(allElems[random]).clone(true)[0];
+        allElems.splice(random, 1);
+        return randEl;
+      });
+      this.each(function(i) {
+        return $(this).replaceWith($(shuffled[i]));
+      });
+      return $(shuffled);
+    };
+  })(jQuery);
 
 }).call(this);

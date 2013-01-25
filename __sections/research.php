@@ -6,15 +6,17 @@
 
 <figure>
 <h5>Currently reading</h5>
-<img src="images/books/outliers.jpg" width="100" />
+<img src="images/books/design-patterns.gif" width="100" />
 <figcaption>
-<h4>Outliers</h4>
-<span>Malcolm Gladwell</span>
-
-<a href="http://twitter.com/home/?status=@GeremyGood,%20you%20should%20read%20:%20" target="_blank">Recomend a book</a>
-<!--<a href="">View this years books</a>-->
+<h4>Design Patterns: </h4><h5>Elements of Reusable Object–oriented&nbsp;Software</h5>
+<div>Erich&nbsp;Gamma, Richard&nbsp;Helm, Ralph&nbsp;Johnson, John&nbsp;Vlissides</div><br/>
 </figcaption>
+<div>
+<a href="http://twitter.com/home/?status=@GeremyGood,%20you%20should%20read%20:%20" target="_blank">Recomend a book +</a> <br/>
+<a href="/books/">View this years books</a>
+</div>
 </figure>
+
 
 <div id="gimmie">
 <h5>Visual Recon</h5>
@@ -26,6 +28,7 @@
 <aside>
   <dl>
     <dt>links</dt>
+    <dd><a href="https://readmill.com/geremygood">Readmill</a></dd>
     <dd><a href="https://gimmebar.com/loves/geremygood" target="_blank">Gimmie Bar</a></dd>
     <dd><a href="https://kippt.com/geremygood" target="_blank">Kippt</a></dd>
 

@@ -1,7 +1,7 @@
 <section id="work">
 <h2>Work</h2>
 <blockquote>“It is your work in life that is the ultimate seduction.”<sup>1</sup></blockquote>
-<p>I'm an interaction designer at The Noun Project, a thinker at Simple.Honest.Work., a bassist for Glittermouse and I work with some of the most talented people in the world on projects I believe in.</p>
+<p>I'm an interaction designer at The Noun Project, a thinker at Simple.Honest.Work., a bassist for Glittermouse and I work with some of the most talented people in the world on projects I believe&nbsp;in.</p>
 <ul>
   <h3>Projects</h3>
   <li><a href="http://www.thenounproject.com">The Noun Project</a></li>

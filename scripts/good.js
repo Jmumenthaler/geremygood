@@ -32,7 +32,7 @@ $('#friends ul li').shuffle();
 $('#organizations ul li').shuffle();
 
 
-$('nav a').click(function(e){
+$('nav ol a').click(function(e){
   e.preventDefault();
 
   var destination = $(this).attr('href');

@@ -1,7 +1,7 @@
 <section id="thequota">
 <h2>The Quota</h2>
 <blockquote>“All motion is cyclic. It circulates to the limits of its possibilities and then returns to its starting point.”<sup>1</sup></blockquote>
-<p>I am giving myself a creative quota. Quality over quantity, but in efforts to keep a steady cycle of learning, exploring, making, and sharing I'm going to meet my quota.</p>
+<p>I am giving myself a creative quota. Quality over quantity, but in efforts to keep a steady cycle of learning, exploring, making, and sharing I'm going to meet my&nbsp;quota.</p>
 
 <ul>
 <li><a href="http://www.geremygood.tumblr.com" target="_blank">Make <em>one</em> good thing <br/>a day</a></li>

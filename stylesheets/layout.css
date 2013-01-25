@@ -1,13 +1,14 @@
 html {
   border-left: solid 18px #ccebff;
   font-family: "Helvetica", sans-serif;
-  -webkit-transition: border-color 0.5s ease; }
+  -webkit-transition: border-color 0.5s ease;
+  min-height: 100%; }
 
 body {
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  padding: 0 0 200px 0; }
+  padding: 0 0 100px 0; }
 
 a {
   color: black;
@@ -119,10 +120,22 @@ aside {
 
 nav {
   position: fixed;
+  display: block;
   top: 248px;
   z-index: 10; }
   nav h1 {
     margin: 0 0 14px -5px; }
+
+article .drop {
+  font-size: 2em;
+  line-height: 1em;
+  background: black;
+  color: white;
+  width: 1em;
+  height: 1em;
+  margin: 0 3px 3px 0;
+  float: left;
+  text-align: center; }
 
 ul {
   list-style: none; }
@@ -147,7 +160,19 @@ ol {
   #research figure img {
     display: inline-block;
     margin-right: 24px;
-    border: solid 9px #dedede; }
+    border: solid 9px #dedede;
+    vertical-align: top; }
+  #research figure div {
+    display: inline-block; }
+  #research figure a {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 50px;
+    vertical-align: bottom; }
+    #research figure a:last-child {
+      margin-top: 0; }
 #research figcaption {
   display: inline-block;
   width: 200px;
@@ -155,13 +180,10 @@ ol {
   #research figcaption h4 {
     margin-bottom: 0; }
   #research figcaption h5 {
-    margin: 0 inherit 24px; }
-  #research figcaption a {
-    display: inline-block;
-    font-size: 12px;
-    font-style: italic;
-    text-decoration: underline;
-    margin-top: 50px; }
+    margin: 6px inherit 24px inherit;
+    display: block;
+    line-height: 1.25em;
+    padding-bottom: 12px; }
 
 #gimmie {
   display: block;
@@ -230,7 +252,8 @@ ol {
   vertical-align: top;
   text-transform: uppercase;
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  position: relative; }
   #thequota li a {
     display: block; }
   #thequota li em {
@@ -262,6 +285,7 @@ ol {
     display: inline-block;
     width: 45%; }
 
+/* COLORS */
 ol li:nth-of-type(1) a:hover, ol li:nth-of-type(1).active a {
   background-color: #ccebff;
   color: #ccebff;
@@ -350,7 +374,7 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
   color: #003d66;
   color: transparent; }
 
-@media all and (min-width: 768px) and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
   aside {
     position: relative;
     top: 0px;
@@ -358,35 +382,44 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
 
   #opening aside {
     top: 0px; } }
-@media all and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   body {
     width: 100%; }
 
-  nav-position: relative;
-  nav-top: inherit;
-  nav-width: 628px;
-  nav-margin: 0px auto;
+  nav {
+    position: relative;
+    top: inherit;
+    width: 628px;
+    margin: 100px auto 0; }
+    nav li:not(:first-child) {
+      display: none; }
+
   section {
-    margin: 200px auto;
-    padding: 0px; }
+    margin: 0 auto;
+    padding: 200px 0; }
 
   #opening {
-    margin-top: 200px; } }
-@media only screen and (max-device-width: 480px) {
+    padding-top: 50px; }
+
+  #connect li {
+    padding-left: 24px; }
+    #connect li a {
+      font-size: 18px; } }
+@media only screen and (max-width: 768px) {
   body {
     width: 100%; }
 
   nav {
     position: relative;
     top: 120px;
-    width: 100%;
-    margin: 0px auto;
+    width: 80%;
     padding: 0px 10%; }
 
   section {
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
     margin: 200px auto;
-    padding: 10%; }
+    padding: 10% 0 10% 10%; }
 
   #opening {
     margin-top: 200px; }
@@ -405,8 +438,14 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
       line-height: 24px;
       padding: 4px inherit; }
 
+  #research figcaption {
+    width: 190px; }
   #research dl {
     margin-top: 24px; }
+  #research #gimmie {
+    width: 90%;
+    min-height: 50px;
+    margin-bottom: 24px; }
 
   #connect ul li {
     display: block;
@@ -415,8 +454,8 @@ section:nth-of-type(9) ::selection, section:nth-of-type(9) ::-moz-selection, sec
     padding: 4px; }
 
   #friends, #organizations {
-    margin: 20px inherit;
-    padding: 20px inherit; }
+    margin-top: 0;
+    margin-bottom: 0; }
     #friends ul li, #organizations ul li {
       width: 100%;
       font-size: 18px;

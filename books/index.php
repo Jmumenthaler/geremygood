@@ -16,7 +16,6 @@
   	<link rel="stylesheet" href="/stylesheets/layout.css">
 
     <script type="text/javascript" src='/scripts/jquery-1.5.min.js'></script>
-    <script type="text/javascript" src='/scripts/gimmie.js'></script>
     <script type="text/javascript" src='/scripts/interaction.js'></script>
 
 </head>
@@ -25,31 +24,17 @@
 
 <nav>
   <ol>
-    <li><h1><a href="#opening">Geremy <br/>Good</a></h1></li>
-    <li><a href="#philosophy">Philosophy</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#thequota">The Quota</a></li>
-    <li><a href="#laboratory">Laboratory</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#connect">Connect</a></li>
+    <li><h1><a href="#2013">2013</a></h1></li>
+    <li><a href="#outliers">Outliers</a></li>
   </ol>
+  <a href="/">home</a>
 </nav>
 
+<section id="2013">
 <?php 
-
-include('__sections/opening.php');
-include('__sections/philosophy.php');
-include('__sections/research.php');
-include('__sections/thequota.php');
-include('__sections/laboratory.php');
-include('__sections/work.php');
-include('__sections/connect.php');
-
-include('__sections/friends.php');
-include('__sections/organizations.php');
-
+include('outliers.php');
 ?>
-
+</section>
 
 </body>
 
@@ -72,3 +57,5 @@ include('__sections/organizations.php');
 </script>    
 
 </html>
+
+
